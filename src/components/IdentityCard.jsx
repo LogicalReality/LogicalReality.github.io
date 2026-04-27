@@ -10,7 +10,7 @@
  */
 export function IdentityCard({ age, accentColor }) {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 flex flex-col items-center md:items-start">
       {/* Foto de Perfil con Efecto Fallout/CRT */}
       <div
         className="border-2 p-1 inline-block transition-all duration-500 shadow-[0_0_30px_rgba(0,255,65,0.4)] hover:shadow-[0_0_50px_rgba(0,255,65,0.6)]"

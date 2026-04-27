@@ -28,7 +28,6 @@ import { processCommand } from '../utils/processCommand';
 const INITIAL_HISTORY = [
   { type: 'system', content: 'Iniciando sistema... OK' },
   { type: 'system', content: 'Conexión establecida con gateway: LogicalReality' },
-  { type: 'system', content: 'Sincronizando con GitHub API... ESPERE' },
 ];
 
 export function useTerminal({ age = 0, projectCount = 0 } = {}) {

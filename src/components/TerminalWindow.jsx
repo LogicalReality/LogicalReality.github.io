@@ -33,7 +33,7 @@ export function TerminalWindow({ history, command, onCommandChange, onKeyDown, a
       </div>
 
       {/* Área de historial + input */}
-      <div className="h-64 overflow-y-auto p-4 text-sm leading-relaxed scrollbar-hide">
+      <div className="h-64 overflow-y-auto p-3 md:p-4 text-xs md:text-sm leading-relaxed scrollbar-hide">
         {history.map((log, i) => (
           <div key={i} className={log.type === 'user' ? 'text-white font-bold' : 'opacity-90'}>
             {log.content}

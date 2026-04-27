@@ -16,10 +16,9 @@ export function Header({ accentColor }) {
       style={{ borderColor: `${accentColor}33` }}
     >
       <div>
-        <h1 className="text-2xl font-bold tracking-tighter uppercase italic opacity-90">
-          Logical_Reality_OS_v2.6
+        <h1 className="text-lg md:text-2xl font-bold tracking-tighter uppercase italic opacity-90">
+          Logical_Reality_OS
         </h1>
-        <p className="text-[10px] opacity-60">CPU_TEMP: 42°C // MEM: 16GB // DISK: OK</p>
       </div>
 
       <div className="flex gap-4">
