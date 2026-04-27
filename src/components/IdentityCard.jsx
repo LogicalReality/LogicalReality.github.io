@@ -24,7 +24,7 @@ export function IdentityCard({ age, accentColor }) {
           />
 
           {/* Barra horizontal descendente (Efecto Fallout/CRT) */}
-          <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-transparent via-[#00FF4144] to-transparent pointer-events-none animate-crt-roll opacity-40" />
+          <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-transparent via-[#00FF4144] to-transparent bg-[size:100%_32px] bg-no-repeat pointer-events-none animate-crt-roll opacity-40" />
 
           {/* Overlay de escaneo estático */}
           <div className="absolute inset-0 pointer-events-none opacity-30 bg-[linear-gradient(rgba(0,255,65,0.1)_1px,transparent_1px)] bg-[size:100%_4px]" />

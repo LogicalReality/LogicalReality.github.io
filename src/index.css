@@ -20,7 +20,7 @@ body {
  */
 @keyframes crt-roll {
   0%   { transform: translateY(-100%); }
-  100% { transform: translateY(200%); }
+  100% { transform: translateY(100%); }
 }
 
 .animate-crt-roll {
