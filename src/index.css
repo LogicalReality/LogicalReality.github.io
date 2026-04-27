@@ -7,3 +7,38 @@ body {
   background-color: black;
   color: white;
 }
+
+/* ─── Efectos CRT / Fallout ───────────────────────────────────────────────── */
+
+/**
+ * ¿Por qué esto está aquí y no en el JSX?
+ * Separación de Concerns (SoC): el CSS describe CÓMO se ve algo.
+ * El JSX describe QUÉ existe. Mezclarlos en un <style> tag dentro
+ * del componente viola ese principio y crea problemas prácticos:
+ * el browser no puede cachear estilos inyectados dinámicamente,
+ * y los DevTools de CSS no los muestran correctamente.
+ */
+@keyframes crt-roll {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(200%); }
+}
+
+.animate-crt-roll {
+  animation: crt-roll 4s linear infinite;
+}
+
+.crt-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%),
+    linear-gradient(
+      90deg,
+      rgba(0, 255, 65, 0.02),
+      rgba(0, 255, 65, 0.01),
+      rgba(0, 255, 65, 0.02)
+    );
+  background-size: 100% 3px, 2px 100%;
+  z-index: 50;
+}
