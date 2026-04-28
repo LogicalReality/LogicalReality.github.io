@@ -42,7 +42,7 @@ export function processCommand(cmd, context = {}) {
 
     case 'contact':
       return {
-        response: 'X (Twitter): @carlos26ch01 | Signal: LogicalReality.enc',
+        response: 'X (Twitter): @carlos26ch01',
         action: null,
       };
 
