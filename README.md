@@ -1,4 +1,4 @@
-# Logical_Reality_OS_v2.6 🖥️
+# Logical_Reality_OS 🖥️
 
 ## Interactive Developer Portfolio & Terminal Emulator
 
@@ -22,10 +22,15 @@ Contiene funciones determinísticas (pure functions) que no dependen de React ni
 Encapsula el comportamiento y la sincronización de datos.
 
 - **`useTerminal`**: Gestiona el historial y la entrada de comandos. Utiliza `useCallback` para optimización de renders.
-- **`useGitHubRepos`**: Repository Pattern para el fetching de datos, manejando estados de carga y errores de API.
+- **`useGitHubRepos`**: Repository Pattern para el fetching de datos de repositorios.
+- **`useContributions`**: Fetching y transformación de actividad real de GitHub con sistema de caché inteligente (localStorage).
 - **`useAge`**: Memoización de cálculos pesados para evitar re-procesamiento innecesario.
 
-### 3. Capa de Presentación (`/src/components`)
+### 3. Capa de Configuración (`/src/config.js`)
+
+Centralización de constantes globales (colores, usuario de GitHub) para evitar "magic strings" y facilitar el rebranding inmediato del portfolio.
+
+### 4. Capa de Presentación (`/src/components`)
 
 Implementación de **Atomic Design** para componentes visuales puros:
 
