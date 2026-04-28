@@ -8,8 +8,7 @@ import { ProjectList } from './components/ProjectList';
 import { ContributionGraph } from './components/ContributionGraph';
 import { Footer } from './components/Footer';
 import { CRTOverlay } from './components/CRTOverlay';
-
-const ACCENT_COLOR = '#00FF41';
+import { GITHUB_USERNAME, ACCENT_COLOR } from './config';
 
 /**
  * App — El Orquestador.
@@ -24,7 +23,7 @@ const ACCENT_COLOR = '#00FF41';
  */
 const App = () => {
   const age = useAge('1996-01-26');
-  const { repos: projects, loading } = useGitHubRepos('LogicalReality');
+  const { repos: projects, loading } = useGitHubRepos(GITHUB_USERNAME);
   const { history, command, setCommand, handleCommand } = useTerminal({
     age,
     projectCount: projects.length,
