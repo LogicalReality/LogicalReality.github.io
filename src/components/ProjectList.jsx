@@ -17,7 +17,7 @@ import { ProjectCard } from './ProjectCard';
  */
 export function ProjectList({ projects, loading, accentColor }) {
   return (
-    <div>
+    <div className="glass-panel p-4 md:p-6 rounded-lg neon-glow animate-float" style={{ animationDelay: '1.5s' }}>
       <h2
         className="text-xl mb-4 flex items-center gap-2 border-l-4 pl-3 uppercase tracking-tighter"
         style={{ borderColor: accentColor }}

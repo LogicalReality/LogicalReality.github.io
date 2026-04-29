@@ -21,7 +21,7 @@
 export function TerminalWindow({ history, command, onCommandChange, onKeyDown, accentColor }) {
   return (
     <div
-      className="bg-zinc-900 rounded-lg overflow-hidden border shadow-[0_0_25px_rgba(0,255,65,0.15)]"
+      className="glass-panel neon-glow rounded-lg overflow-hidden animate-float"
       style={{ borderColor: accentColor }}
     >
       {/* Barra de título estilo macOS/terminal */}

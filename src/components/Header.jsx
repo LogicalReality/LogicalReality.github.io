@@ -12,8 +12,8 @@ import { FaGithub, FaXTwitter } from 'react-icons/fa6';
 export function Header({ accentColor }) {
   return (
     <div
-      className="w-full max-w-4xl border-b pb-4 mb-8 flex justify-between items-center relative z-10"
-      style={{ borderColor: `${accentColor}33` }}
+      className="w-full max-w-4xl glass-panel neon-glow rounded-lg p-4 mb-8 flex justify-between items-center relative z-10 animate-float"
+      style={{ animationDelay: '0.2s', borderColor: `${accentColor}33` }}
     >
       <div>
         <h1 className="text-lg md:text-2xl font-bold tracking-tighter uppercase italic opacity-90">

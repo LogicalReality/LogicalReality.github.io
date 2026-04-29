@@ -8,6 +8,7 @@ import { ProjectList } from './components/ProjectList';
 import { ContributionGraph } from './components/ContributionGraph';
 import { Footer } from './components/Footer';
 import { CRTOverlay } from './components/CRTOverlay';
+import { MatrixBackground } from './components/MatrixBackground';
 import { GITHUB_USERNAME, ACCENT_COLOR } from './config';
 
 /**
@@ -58,6 +59,7 @@ const App = () => {
 
       <Footer accentColor={ACCENT_COLOR} />
 
+      <MatrixBackground />
       <CRTOverlay />
     </div>
   );

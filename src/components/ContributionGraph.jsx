@@ -35,7 +35,7 @@ export function ContributionGraph() {
 
   if (loading) {
     return (
-      <div className="pt-4">
+      <div className="glass-panel p-4 md:p-6 rounded-lg neon-glow animate-float" style={{ animationDelay: '3s' }}>
         <h2 className="text-[10px] mb-3 uppercase tracking-[0.2em] opacity-40 italic">
           System_Contribution_Log
         </h2>
@@ -61,7 +61,7 @@ export function ContributionGraph() {
     }));
 
     return (
-      <div className="pt-4">
+      <div className="glass-panel p-4 md:p-6 rounded-lg neon-glow animate-float" style={{ animationDelay: '3s' }}>
         <h2 className="text-[10px] mb-3 uppercase tracking-[0.2em] opacity-40 italic">
           System_Contribution_Log
         </h2>
@@ -80,7 +80,7 @@ export function ContributionGraph() {
   }
 
   return (
-    <div className="pt-4">
+    <div className="glass-panel p-4 md:p-6 rounded-lg neon-glow animate-float" style={{ animationDelay: '3s' }}>
       <h2 className="text-[10px] mb-3 uppercase tracking-[0.2em] opacity-40 italic">
         System_Contribution_Log — {total} contributions/year
       </h2>

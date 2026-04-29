@@ -13,7 +13,7 @@ export function IdentityCard({ age, accentColor }) {
     <div className="space-y-6 flex flex-col items-center md:items-start">
       {/* Foto de Perfil con Efecto Fallout/CRT */}
       <div
-        className="border-2 p-1 inline-block transition-all duration-500 shadow-[0_0_30px_rgba(0,255,65,0.4)] hover:shadow-[0_0_50px_rgba(0,255,65,0.6)]"
+        className="glass-panel p-1 inline-block transition-all duration-500 shadow-[0_0_30px_rgba(0,255,65,0.4)] hover:shadow-[0_0_50px_rgba(0,255,65,0.6)] animate-float"
         style={{ borderColor: accentColor }}
       >
         <div className="w-48 h-48 bg-zinc-900 flex items-center justify-center relative overflow-hidden group">
@@ -36,8 +36,8 @@ export function IdentityCard({ age, accentColor }) {
 
       {/* Datos personales */}
       <div
-        className="space-y-2 p-4 rounded border"
-        style={{ backgroundColor: `${accentColor}08`, borderColor: `${accentColor}33` }}
+        className="glass-panel space-y-2 p-4 rounded neon-glow"
+        style={{ borderColor: `${accentColor}33` }}
       >
         <h2 className="text-xl text-white underline underline-offset-8 mb-4 tracking-widest text-center md:text-left">
           IDENTIDAD
