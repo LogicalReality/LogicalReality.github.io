@@ -21,11 +21,11 @@ import { useContributions } from '../hooks/useContributions';
 import { GITHUB_USERNAME } from '../config';
 
 const INTENSITIES = [
-  'bg-[#00FF4114]',
-  'bg-[#00FF4133]',
-  'bg-[#00FF4166]',
-  'bg-[#00FF41B3]',
-  'bg-[#00FF41]',
+  'bg-[#00FF9114]',
+  'bg-[#00FF9133]',
+  'bg-[#00FF9166]',
+  'bg-[#00FF91B3]',
+  'bg-[#00FF91]',
 ];
 
 const SKELETON_DAYS = Array.from({ length: 56 }, (_, i) => i);

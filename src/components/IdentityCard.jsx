@@ -13,7 +13,7 @@ export function IdentityCard({ age, accentColor }) {
     <div className="space-y-6 flex flex-col items-center md:items-start">
       {/* Foto de Perfil con Efecto Fallout/CRT */}
       <div
-        className="glass-panel p-1 inline-block transition-all duration-500 shadow-[0_0_30px_rgba(0,255,65,0.4)] hover:shadow-[0_0_50px_rgba(0,255,65,0.6)] animate-float"
+        className="glass-panel p-1 inline-block transition-all duration-500 shadow-[0_0_30px_rgba(0,255,145,0.4)] hover:shadow-[0_0_50px_rgba(0,255,145,0.6)] animate-float"
         style={{ borderColor: accentColor }}
       >
         <div className="w-48 h-48 bg-zinc-900 flex items-center justify-center relative overflow-hidden group">
@@ -24,13 +24,13 @@ export function IdentityCard({ age, accentColor }) {
           />
 
           {/* Barra horizontal descendente (Efecto Fallout/CRT) */}
-          <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-transparent via-[#00FF4144] to-transparent bg-[size:100%_32px] bg-no-repeat pointer-events-none animate-crt-roll opacity-40" />
+          <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-transparent via-[#00FF9144] to-transparent bg-[size:100%_32px] bg-no-repeat pointer-events-none animate-crt-roll opacity-40" />
 
           {/* Overlay de escaneo estático */}
-          <div className="absolute inset-0 pointer-events-none opacity-30 bg-[linear-gradient(rgba(0,255,65,0.1)_1px,transparent_1px)] bg-[size:100%_4px]" />
+          <div className="absolute inset-0 pointer-events-none opacity-30 bg-[linear-gradient(rgba(0,255,145,0.1)_1px,transparent_1px)] bg-[size:100%_4px]" />
 
           {/* Brillo en los bordes al hacer hover */}
-          <div className="absolute inset-0 pointer-events-none border-4 border-transparent group-hover:border-[#00FF4122] transition-all" />
+          <div className="absolute inset-0 pointer-events-none border-4 border-transparent group-hover:border-[#00FF9122] transition-all" />
         </div>
       </div>
 

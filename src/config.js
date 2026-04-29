@@ -6,4 +6,4 @@
  */
 
 export const GITHUB_USERNAME = 'LogicalReality';
-export const ACCENT_COLOR = '#00FF41';
+export const ACCENT_COLOR = '#00FF91';
