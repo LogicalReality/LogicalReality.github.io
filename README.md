@@ -23,7 +23,7 @@ Encapsula el comportamiento y la sincronización de datos.
 
 - **`useTerminal`**: Gestiona el historial y la entrada de comandos. Utiliza `useCallback` para optimización de renders.
 - **`useGitHubRepos`**: Repository Pattern para el fetching de datos de repositorios.
-- **`useContributions`**: Fetching y transformación de actividad real de GitHub con sistema de caché inteligente (localStorage).
+- **`useContributions`**: Fetching y transformación de actividad real de GitHub usando el proxy API de GitHub, con sistema de caché inteligente (localStorage).
 - **`useAge`**: Memoización de cálculos pesados para evitar re-procesamiento innecesario.
 
 ### 3. Capa de Configuración (`/src/config.js`)
@@ -60,6 +60,7 @@ npm test
 
 La interfaz utiliza una estética retro-futurista basada en terminales de los 80s y la estética de Fallout.
 
+- **Matrix Background**: Fondo dinámico de alta performance renderizado con HTML5 Canvas.
 - **CSS puro**: Animaciones de scanlines y efectos de "flicker" movidos de la lógica de JS a `index.css` para optimización de performance y caché del navegador.
 - **Glassmorphism**: Efectos de transparencia y bordes neón (`#00FF41`).
 
