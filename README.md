@@ -51,7 +51,7 @@ El proyecto cuenta con una suite de pruebas unitarias utilizando **Vitest** y **
 Para correr las pruebas:
 
 ```bash
-npm test
+pnpm test
 ```
 
 ---
@@ -79,9 +79,9 @@ La interfaz utiliza una estética retro-futurista basada en terminales de los 80
 ## 🛠️ Instalación y Desarrollo
 
 1. Clonar el repositorio.
-2. Instalar dependencias: `npm install`
-3. Iniciar entorno de desarrollo: `npm run dev`
-4. Ejecutar linter: `npm run lint`
+2. Instalar dependencias: `pnpm install`
+3. Iniciar entorno de desarrollo: `pnpm dev`
+4. Ejecutar linter: `pnpm lint`
 
 ---
 
