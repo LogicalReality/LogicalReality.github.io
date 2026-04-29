@@ -46,7 +46,7 @@ body {
 /* ─── Premium UI Effects ─────────────────────────────────────────────────── */
 
 .glass-panel {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(0, 255, 65, 0.2);
